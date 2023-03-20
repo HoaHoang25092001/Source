@@ -182,7 +182,7 @@ const ProductDetailScreen = ({ navigation, route }) => {
       <View style={styles.topBarContainer}>
         <TouchableOpacity
           onPress={() => {
-            navigation.jumpTo("home");
+            navigation.goBack();
           }}
         >
           <Ionicons

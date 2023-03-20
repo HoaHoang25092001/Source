@@ -12,7 +12,6 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import React, { useEffect, useState } from "react";
 import cartIcon from "../../assets/icons/cart_beg.png";
-import scanIcon from "../../assets/icons/scan_icons.png";
 import easybuylogo from "../../assets/logo/logo.png";
 import { colors } from "../../constants";
 import CustomIconButton from "../../components/CustomIconButton/CustomIconButton";
@@ -26,25 +25,19 @@ import { SliderBox } from "react-native-image-slider-box";
 
 const category = [
   {
-    _id: "62fe244f58f7aa8230817f89",
-    title: "Garments",
-    image: require("../../assets/icons/garments.png"),
+    _id: "6417d1fef4a14efc88c07fda",
+    title: "Men",
+    image: require("../../assets/icons/men.png")
   },
   {
-    _id: "62fe243858f7aa8230817f86",
-    title: "Electornics",
-    image: require("../../assets/icons/electronics.png"),
+    _id: "6417d212f4a14efc88c07fdd",
+    title: "Women",
+    image: require("../../assets/icons/women.png")
   },
   {
-    _id: "62fe241958f7aa8230817f83",
-    title: "Cosmentics",
-    image: require("../../assets/icons/cosmetics.png"),
-  },
-  {
-    _id: "62fe246858f7aa8230817f8c",
-    title: "Groceries",
-    image: require("../../assets/icons/grocery.png"),
-  },
+    _id: "6417d21af4a14efc88c07fe0",
+    title: "Kids",
+  }
 ];
 
 const slides = [
@@ -129,7 +122,7 @@ const HomeScreen = ({ navigation, route }) => {
         </TouchableOpacity>
         <View style={styles.topbarlogoContainer}>
           <Image source={easybuylogo} style={styles.logo} />
-          <Text style={styles.toBarText}>EasyBuy</Text>
+          <Text style={styles.toBarText}>Jardo</Text>
         </View>
         <TouchableOpacity
           style={styles.cartIconContainer}
@@ -190,8 +183,8 @@ const HomeScreen = ({ navigation, route }) => {
           </View>
           <View style={styles.buttonContainer}>
             <TouchableOpacity style={styles.scanButton}>
-              <Text style={styles.scanButtonText}>Scan</Text>
-              <Image source={scanIcon} style={{ width: 20, height: 20 }} />
+              <Text style={styles.scanButtonText}>Search</Text>
+              <Image style={{ width: 20, height: 20 }} />
             </TouchableOpacity>
           </View>
         </View>

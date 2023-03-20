@@ -62,25 +62,17 @@ const CategoriesScreen = ({ navigation, route }) => {
   };
   const category = [
     {
-      _id: "62fe244f58f7aa8230817f89",
-      title: "Garments",
-      image: require("../../assets/icons/garments.png"),
+      _id: "6417d1fef4a14efc88c07fda",
+      title: "Men",
     },
     {
-      _id: "62fe243858f7aa8230817f86",
-      title: "Electornics",
-      image: require("../../assets/icons/electronics.png"),
+      _id: "6417d212f4a14efc88c07fdd",
+      title: "Women",
     },
     {
-      _id: "62fe241958f7aa8230817f83",
-      title: "Cosmentics",
-      image: require("../../assets/icons/cosmetics.png"),
-    },
-    {
-      _id: "62fe246858f7aa8230817f8c",
-      title: "Groceries",
-      image: require("../../assets/icons/grocery.png"),
-    },
+      _id: "6417d21af4a14efc88c07fe0",
+      title: "Kids",
+    }
   ];
   const [selectedTab, setSelectedTab] = useState(category[0]);
 

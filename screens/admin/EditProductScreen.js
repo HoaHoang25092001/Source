@@ -71,7 +71,7 @@ const EditProductScreen = ({ navigation, route }) => {
       quality: 0.5,
     });
     console.log(result);
-    if (!result.cancelled) {
+    if (!result.canceled) {
       setImage(result.assets[0].uri);
     }
   };
